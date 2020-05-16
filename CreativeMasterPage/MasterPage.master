@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            height: 475px;
+        }
+        .auto-style2 {
+            height: 96px;
+            text-align: center;
+            background-color: #99FF66;
+        }
+        .auto-style3 {
+            height: 52px;
+            background-color: #FFFF66;
+        }
+        .auto-style4 {
+            height: 266px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+            <p>
+                <table class="auto-style1">
+                    <tr>
+                        <td class="auto-style2">
+                            <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="60pt" Text="Master Page"></asp:Label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style3">
+                            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Home.aspx">Homepage</asp:HyperLink>
+&nbsp;&nbsp; |&nbsp;&nbsp;
+                            <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/About.aspx">About</asp:HyperLink>
+&nbsp;&nbsp; |&nbsp;&nbsp;
+                            <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Contact.aspx">Contact Us</asp:HyperLink>
+&nbsp;&nbsp; |&nbsp;&nbsp;
+                            <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Services.aspx">Services</asp:HyperLink>
+                        </td>
+                    </tr>
+                    <tr>
+                       
+                        <td class="auto-style4">
+
+                               <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+                          
+                          </asp:ContentPlaceHolder>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center; background-color: #FFFF66">Website Created And Design by JD</td>
+                    </tr>
+                </table>
+                <br />
+            </p>
+        
+       
+    </div>
+    </form>
+</body>
+</html>
